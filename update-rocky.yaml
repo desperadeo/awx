@@ -1,0 +1,9 @@
+---
+- name: Update Rocky Linux
+  hosts: all
+  tasks:
+    - name: Update all packages
+      ansible.builtin.yum:
+        name: '*'
+        state: latest
+
